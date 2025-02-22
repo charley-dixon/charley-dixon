@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Personal Portfolio of Charley Dixon">
+  <title>Charley Dixon | Portfolio</title>
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+  <header class="bg-dark text-white py-3">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Charley Dixon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="text-center py-5 bg-light">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Charley Dixon</h1>
+      <img src="assets/images/profile.jpg" alt="Profile Picture" class="rounded-circle mb-4 img-fluid" style="max-width: 150px;">
+      <p class="lead">Digital Service Provider | Web Enthusiast | Writer</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://www.linkedin.com/in/charley-dixon/" class="btn btn-primary" target="_blank">LinkedIn</a>
+        <a href="https://github.com/charley-dixon" class="btn btn-dark" target="_blank">GitHub</a>
+        <a href="https://medium.com/@dixoncharley" class="btn btn-secondary" target="_blank">Medium</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <p class="text-justify">I'm a versatile Digital Service Provider with a passion for technology, storytelling, and mindfulness. With a background in software implementation and strong skills in web development, I enjoy building user-friendly websites and exploring creative solutions. Beyond the screen, I'm a yoga enthusiast, mindfulness advocate, and dedicated DIYer—whether it's making cold process soap, crafting pasta from scratch, or diving into new hobbies like beekeeping. I thrive at the intersection of tech and creativity, always looking for ways to merge functionality with purpose. When I'm not working, you can find me playing chess, tending to my garden, or exploring the depths of sci-fi and history.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Project Title 1</h5>
+              <p class="card-text">Short project description.</p>
+              <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Project Title 2</h5>
+              <p class="card-text">Short project description.</p>
+              <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="_replyto" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; Charley Dixon 2025. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>
